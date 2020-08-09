@@ -1,0 +1,31 @@
+{% extends 'candidate/base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static '/css/dashboard.css' %}">
+{% endblock %}
+
+{% block nav %}
+<div class="opt">
+    <a href="{% url 'loginPage' %}">LogIn</a>
+</div>
+{% endblock %}
+
+    {% block content %}
+    <div class="dashboard">
+        <div class="hackers">
+            <br>
+            <br>
+            <br>
+            <h2>Vote for <span id="best"> BEST HACKER </span> you can <i> vote only once.</i></h2>
+            <br>
+            {% for hacker in hackers %}
+                <div class="hacker">
+                    <a href="{% url 'detail' hacker.id %}">{{ hacker }}</a>
+                    <br>
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+    {% endblock %}

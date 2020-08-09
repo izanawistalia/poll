@@ -1,0 +1,24 @@
+{% extends 'candidate/base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static '/css/loginPage.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="loginPage">
+    <div class="log">
+        <h1 align="center">Candidate</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {% for field in form %}
+            <div class="form-field">{{ field.label }}: {{ field }}</div>
+            {% endfor %}
+            {% for subject in expert %}
+            <div class="form-field">{{ subject }} : <input type="number" min="0" max="5" name="{{ subject }}" placeholder="0-5"></div>
+            {% endfor %}
+        <input type="submit" value="submit" class="form-button">
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,56 @@
+.loginPage{
+    background: linear-gradient(rgb(166, 194, 184), aquamarine);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+.log{
+    margin: 70px;
+    height: 60vh;
+    width: 70vh;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.2);
+}
+
+/*#contact-form{   
+    margin-left: 30%;
+    align-self: center;
+}*/
+h1{
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(58, 148, 70);
+}
+form{display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-field{
+    
+    background: transparent;
+    color: whitesmoke;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid grey;
+    color: white;
+    text-align: center;
+}
+.form-button{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+    background: rgba(150,0,0,0.7);
+    color: aliceblue;
+}
+.form-button>a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px;
+    background: rgba(150,0,0,0.7);
+    color: aliceblue;
+}

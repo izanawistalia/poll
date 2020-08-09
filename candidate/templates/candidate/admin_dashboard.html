@@ -1,0 +1,31 @@
+{% extends 'candidate/base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static '/css/admin_dashboard.css' %}">
+{% endblock %}
+
+{% block nav %}
+<div class="opt">
+    <a href="{% url 'logoutPage' %}">LogOut</a>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="admin">
+    <h1 align="center">Admin Dashboard</h1>
+    <div class="dashboard">
+        <div class="head">
+            <span class="heading"><a href="{% url 'create' %}">create candidate</a></span>
+        </div>
+        {% for candidate in candidates %}
+        <div class="data">
+            <span class="datum">{{ candidate.id }}</span>
+            <span class="datum">{{ candidate.name }}</span>
+            <span class="datum up_btn"><a href="{% url 'update' candidate.id %}">update</a></span>
+            <span class="datum del_btn"><a href="{% url 'delete' candidate.id %}">delete</a></span>
+        </div>
+        {% endfor %}
+</div>
+</div>
+{% endblock %}

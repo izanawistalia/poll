@@ -1,0 +1,43 @@
+.dashboard{
+    background: linear-gradient(rgba(166, 194, 184, 0.5), rgba(126, 252, 210, 0.5));
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+.hacker{
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.3em;
+    text-align: center;
+}
+.hacker a{
+    text-decoration: none;
+    color: rgb(59, 112, 66);
+    font-weight: bolder;
+    transition: 0.2s;
+}
+.hacker a:hover{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: rgb(55, 87, 59);
+}
+#best{
+    font-size: 1.05em;
+    font-family: cursive;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate{
+    0%{
+        color: rgb(55, 87, 59);
+    }
+    30%{
+        color: rgb(5, 148, 93);
+    }
+    60%{
+        color: rgb(5, 133, 122);
+    }
+    90%{
+        color: rgb(9, 83, 168);
+    }
+
+}

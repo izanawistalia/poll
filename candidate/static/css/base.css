@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(4, 4, 31);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+header a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.opt{
+    font-size: 1.2em;
+    font-weight: lighter;
+}

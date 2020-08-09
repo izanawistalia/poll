@@ -1,0 +1,59 @@
+.admin{
+    height: 92vh;
+    background: linear-gradient(rgba(166, 194, 184, 0.7), rgba(125, 252, 210, 0.7));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    margin: 10px;
+}
+.dashboard{
+    width: 100%;
+    margin: 10px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+}
+.data{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1.1em;
+    border-bottom: 1px solid rgba(100,100,100,0.5);
+}
+.head{
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(0, 140, 255);
+    padding: 7px;
+}
+.head a{
+    font-size: 1.05em;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-decoration: none;
+    color: white;
+}
+.up_btn a, .del_btn a{
+    text-decoration: none;
+    padding: 3px 20px; 
+    border-radius: 5px;
+}
+.up_btn a{
+    color: green;
+    border: 1px solid green;
+    background-color: rgba(0,255,0,0.1);
+    box-shadow: inset 1px 1px 5px green,
+                inset -1px -1px 5px green;
+}
+.del_btn a{
+    color: red;
+    border: 1px solid red;
+    background-color: rgba(255,0,0,0.1);
+    box-shadow: inset 1px 1px 5px red,
+                inset -1px -1px 5px red;
+}
